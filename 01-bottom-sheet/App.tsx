@@ -9,6 +9,7 @@ export default function App() {
 
   const onPress = useCallback(() => {
     const isActive = ref?.current?.isActive();
+    console.log({isActive});
     if (isActive) {
       ref?.current?.scrollTo(0);
     } else {
